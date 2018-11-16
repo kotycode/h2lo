@@ -1,0 +1,22 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksander G",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "html": "^1.0.0",
+    "properjs-pagecontroller": "^0.4.4",
+    "pub": "^0.2.0",
+    "swig": "^1.4.2"
+  }
+}
