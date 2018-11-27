@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HOME_SYSTEM_EVENT</title>
+        <meta name="automation_home" content="Using node.js & mysql">
+        <link rel="stylesheet" href="/css/main.css">
+        <script type="text/javascript" src="../controllers/PagesController.js"> </script>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1> TABLE NET </h1>
+
+        <table id="table" >  
+            <thead>  
+                <tr>  
+                    <th>_Id</th>  
+                    <th>Data i Czas</th>
+                    <th>Skurczowe</th>  
+                    <th>Rozkurczowe</th> 
+                    <th>Puls</th>  
+                    <th>Komentarz</th> 
+                </tr>  
+            </thead>  
+            <tbody>  
+                <% print.forEach(function (pressure) { %>
+                <tr>  
+                    <td><%= pressure.id %></td>  
+                    <td><%= pressure.data_time %></td>
+                    <td><%= pressure.systolic %></td>
+                    <td><%= pressure.diastolic %></td>
+                    <td><%= pressure.pulse %></td>
+                    
+                    <td><%= pressure.comment %></td>
+            
+                </tr>                                   
+                <% }) %>
+            </tbody>
+        </table>   
+
+
+    </body>
+</html>

@@ -11,7 +11,9 @@ const ApplicationController = require('../controllers/ApplicationsController');
 
 
 router.get('/', PagesController.home);
-router.get('/next', PagesController.next);
+router.get('/measurement', PagesController.measurement);
+
+router.post('/applications', ApplicationController.store);
 
 //Przypisanie ruter do obiektu model export
 module.exports = router;

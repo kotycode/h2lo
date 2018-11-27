@@ -10,11 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "bookshelf": "^0.13.3",
     "connect-flash": "^0.1.1",
     "consolidate": "^0.15.1",
     "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "html": "^1.0.0",
+    "knex": "^0.15.2",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.4",
     "properjs-pagecontroller": "^0.4.4",
     "pub": "^0.2.0",
     "swig": "^1.4.2"
