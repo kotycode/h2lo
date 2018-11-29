@@ -35,3 +35,8 @@ exports.measurement = (req, res) => {
     //connection.end();
     console.log("End connections")
 };
+
+exports.temp = (req, res) => {
+    res.render('temp');
+    console.log("temperature page opened");
+}

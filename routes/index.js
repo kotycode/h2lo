@@ -12,6 +12,7 @@ const ApplicationController = require('../controllers/ApplicationsController');
 
 router.get('/', PagesController.home);
 router.get('/measurement', PagesController.measurement);
+router.get('/temp', PagesController.temp);
 
 router.post('/applications', ApplicationController.store);
 
